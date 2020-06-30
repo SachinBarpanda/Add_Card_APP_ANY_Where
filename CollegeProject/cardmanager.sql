@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 30, 2020 at 09:25 AM
+-- Generation Time: Jun 30, 2020 at 11:17 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.6
 
@@ -27,6 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `admin`
 --
 
+DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin` (
   `id` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
@@ -39,6 +40,7 @@ CREATE TABLE `admin` (
 -- Table structure for table `carddetails`
 --
 
+DROP TABLE IF EXISTS `carddetails`;
 CREATE TABLE `carddetails` (
   `id` int(11) NOT NULL,
   `cardName` varchar(50) NOT NULL,
@@ -50,22 +52,13 @@ CREATE TABLE `carddetails` (
   `userid` int(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `carddetails`
---
-
-INSERT INTO `carddetails` (`id`, `cardName`, `NameOnCard`, `CardNumber`, `ExpiryDate`, `cvv`, `PhoneNumberForOTP`, `userid`) VALUES
-(40, '', '', '8924 7392 8472 9899', '', 0, 0, 520),
-(41, '', '', '8987 4987 2948 3794', '', 0, 0, 520),
-(47, 'TEra Baaap2', 'Sachin Barpanda', '4565 4654 5465 4654', '12 / 12', 123, 7008673544, 525),
-(48, 'TEra Baaap', 'Sachin2', '6565 7657 6576 5765', '12 / 12', 908, 917008673544, 525);
-
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `userscard`
 --
 
+DROP TABLE IF EXISTS `userscard`;
 CREATE TABLE `userscard` (
   `id` int(11) NOT NULL,
   `firstName` varchar(100) NOT NULL,
@@ -76,21 +69,6 @@ CREATE TABLE `userscard` (
   `Created_On` datetime NOT NULL,
   `Picture` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `userscard`
---
-
-INSERT INTO `userscard` (`id`, `firstName`, `lastName`, `username`, `password`, `email`, `Created_On`, `Picture`) VALUES
-(517, 'Sachin', 'Barpanda', 'sam_sachin', '123456', 'sachin.barpanda@suiit.ac.in', '2020-06-29 07:37:18', 'master-image.jpg'),
-(518, 'Sachin', 'Barpanda', 'sam', '', '', '2020-06-29 07:43:00', ''),
-(519, 'Sachin2', 'Barpanda', 'thisIsMe', '123456', 'sachin.barpanda@suiit.ac.in', '2020-06-29 08:27:54', ''),
-(520, 'Sachin', 'Barpanda', 'iio', '123456', 'sachin.barpanda@suiit.ac.in', '2020-06-29 08:44:36', ''),
-(521, '', '', 'sam_sac', '123456', '', '2020-06-29 11:32:14', ''),
-(522, '', '', 'lopopop', '123456', '', '2020-06-29 12:15:55', ''),
-(523, 'Sachin', 'Barpanda', 'new', '123456', 'barpandasachin@gmail.com', '2020-06-29 15:02:38', ''),
-(524, 'Sachin', 'Barpanda', 'Sam Kal', '1234', 'barpandasachin@gmail.com', '2020-06-30 08:40:38', 'master-image.jpg'),
-(525, 'Sachin', 'Barpanda', 't_sACHIN', '123456', 'barpandasachin@gmail.com', '2020-06-30 08:47:11', '');
 
 --
 -- Indexes for dumped tables
