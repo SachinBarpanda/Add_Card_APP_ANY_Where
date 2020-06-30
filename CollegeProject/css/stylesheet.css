@@ -1,0 +1,203 @@
+body{
+    font-family: "Montserrat", sans-serif;  
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 800;
+    color: #ade6d8;
+    margin-top: 4%;
+    line-height: 4.0rem;
+    font-size: 4.53rem;
+}
+h2{
+    color:#ade6d8;
+}
+.container-fluid{
+    padding:1% 15%;
+    position: relative;
+    display: inline-block;
+    color: #ade6d8;
+}
+#title{
+    background-image: url("../images/master-image.jpg");  
+    background-size: cover;
+    background-position: center center;
+    text-align: center;   
+}
+
+/* .card-body{
+    background-color:#00008b;
+    color:white;
+    margin:15% 10%;
+} */
+
+.register-button{
+    margin: 2% 2%;
+}
+
+.card-view{
+    background-color: #255BCC80;
+    position: relative;
+    left:28%;
+    width: 40%;
+    height: 30%;
+    padding: 0;
+    text-align: center;
+}
+.card-subtitle{
+    font-size: 0.8rem;
+}
+.card-list{
+    padding:-50%;
+    text-align: center;
+}
+.card-div{
+    display: inline-block;
+    text-align: center;
+    width: 100%; 
+    height: 300px; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+
+.card-div::-webkit-scrollbar {
+    display: none;
+}
+.card-div {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+@media(max-width:1334px){
+    .card-list{
+        padding:1%;
+        align-items: center;
+        
+    }
+    .card-items{
+        margin: 2%  0 0 10%;
+    }
+}
+@media(max-width:857px){
+    .card-list{
+        padding:1%;
+        display: inline-block;
+        align-items: center;
+    }
+}
+.card-items{
+    margin: 2%  0 0 2.5%;
+    background-color: #255BCC80;
+}
+.top-logout{
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    top: 1%;
+}
+.top-login{
+    display: inline-block;
+    position: relative;
+    left: 43%;
+    top: 1%;
+}
+.top-login-btn{
+    margin-top: 1%;
+    display: inline-block;
+}
+.top-logout{
+    display: inline-block;
+}
+.top-welcome{
+    font-family: 'Bebas Neue', cursive;
+    line-height: 4.0rem;
+    font-size: 4.53rem;
+    display: inline-block;
+    position: absolute;
+    right: 85%;
+    color:lightgray;
+}
+@media(max-width:1124px){
+    .top-welcome{
+        position: absolute;
+        right: 80%;
+    }
+}
+@media(max-width:1124px){
+
+}
+
+.card-link-a{
+  margin: 1% 6%;
+  position: relative;
+  bottom: 70px;  
+}
+@media(max-width:1315px){
+    .card-link-a{
+        margin: 1% 1%;    
+      }
+}
+@media(max-width:911px){
+    .card-link-a{
+        margin: 1% 1%; 
+        display: inline-block;
+        text-align: center;   
+      }
+}
+.icon-feature{
+    color: lightgray;
+}
+
+
+/* REGISTER PAGE */
+.register-ui{
+    padding: 0% 30%;
+}
+.Register-head:after,
+.Register-head:before{
+    
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid #ade6d8; 
+    width: 4rem;
+    margin: 2% 1rem 0;
+    transform: translateY(-1rem);   
+}
+.Register-head{
+    text-align: center;
+}
+.top-back{
+    position: relative;
+    display: inline-block;
+    top: 2%;
+}
+.form-class{
+    position: relative;
+}
+
+/* LOGIN-PAGE */
+.login-ui{
+    padding: 10% 40%;
+}
+.login-head{
+    text-align: center;
+}
+.login-head:after,
+.login-head:before{
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid #ade6d8; 
+    width: 2rem;
+    margin: 1% 1rem 0;
+    transform: translateY(-1rem);  
+}
+
+
+/* ADD PAGE */
+.addCard-head{
+    text-align: center;
+    font-size: 3.0rem;
+    font-family: 'Bebas Neue', cursive;
+    font-stretch: extra-expanded;
+}
+
